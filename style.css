@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* imp for 3d effect */
+  perspective: 10px;
+}
+
+.header{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* z-index: -1; */
+  /* imp for 3d effect */
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background{
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* imp for 3d effect */
+  transform: translateZ(-60px) scale(7.2);
+  filter: blur(1px);
+  z-index: -1;
+}
+
+
+.foreground{
+  object-fit: cover;
+  position: absolute;  
+  height: 100%;
+  height: 100%;
+  /* imp for 3d effect */
+  transform: translateZ(-20px) scale(3.4);
+  z-index: -1;
+} 
+
+.heading{
+  font-size: 7rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(52,52,76);
+  letter-spacing: 16px;
+}
+
+
+section{
+  background-color: rgba(67, 67, 67);
+}
+
+
+.sechead{
+  color: white;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1.2rem;
+  color: white;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: justify;
+}
+
+.bg{
+  position: relative;
+  width: 100%;
+  /* importent line for paralax effect */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  /* filter: blur(2px); */
+}
+
+.des{
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  text-shadow: 2px 2px 2px black;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.bg1{
+  background-image: url(images/racing.jpg);
+}
+
+.bg3{
+  background-image: url(images/beach-5622187_1920.jpg);
+}
+
+.bg2{
+  background-image: url(images/surfing.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
